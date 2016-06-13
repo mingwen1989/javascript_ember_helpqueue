@@ -1,10 +1,8 @@
-<table>
-  <tr>
-    <td style="padding:5px;width:16%"><h2>{{ticket.location}}</h2></td>
-    <td style="padding:5px;width:20%"><h2>{{timeElapsed}}m</h2></td>
-    <td style="padding:5px;width:45%;font-weight:300"><h2>{{ticket.name}}</h2></td>
 
+<table style="width:100%;border-bottom:1px #ccc solid">
+  <tr>
+    <td style="padding:15px;width:140px"><h2 style="font-weight: 400;">{{#link-to 'teacher-page' ticket.id}}{{ticket.location}}{{/link-to}}</h2></td>
+    <td style="padding:15px;"><h2 style="font-weight: 300;color:grey;">{{timeElapsed}}m</h2></td>
+    <td style="padding:15px;width:70%"><h2 style="font-weight: 400;">{{#link-to 'teacher-page' ticket.id}}{{ticket.name}}{{/link-to}}</h2></td>
   </tr>
 </table>
-
-  <hr>
