@@ -1,3 +1,4 @@
 {{#each model as |ticket|}}
-    {{ticket-tile ticket=ticket}}
+    {{#link-to 'teacher-page'}}{{ticket-tile ticket=ticket}}{{/link-to}}
 {{/each}}
+{{#link-to 'new-ticket'}}<button2 style="background:orange;float:right;margin-top:10px;padding:7px;border-radius:3px;border:1px #ccc solid;color:#000">New Ticket</button2>{{/link-to}}
